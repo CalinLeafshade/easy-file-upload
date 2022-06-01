@@ -1,0 +1,13 @@
+version: "2"
+services:
+  api:
+    image: node:16.14
+    ports:
+      - "4000:80"
+    environment:
+      - KEY=12345
+      - NODE_ENV=development
+    working_dir: /var/www/html
+    command: "npm run dev"
+    volumes:
+      - ./src/packages/api:/var/www/html
