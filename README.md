@@ -25,7 +25,7 @@ volumes:
 
 EFU listens on port 80.
 
-##Configuration
+## Configuration
 
 EFU is configured using environment variables.
 
@@ -34,7 +34,7 @@ EFU is configured using environment variables.
 | KEY         | Your secret key for uploading to the service |
 | UPLOAD_DEST | The location where uploads will be saved     |
 
-##Usage
+## Usage
 
 Upload to the service using `curl` or something similar
 
@@ -52,7 +52,7 @@ This will return some json similar to:
 
 The file can then be accessed at `https://HOSTNAME/HASHHERE.EXT`.
 
-###Health check
+### Health check
 
 There is also `/api/health` which just returns an empty `204` response to ensure the server is up.
 
